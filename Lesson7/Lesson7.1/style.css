@@ -1,0 +1,44 @@
+.grid_test{
+    display: grid;
+    border: black 2px solid;
+}
+.grid_item1 {
+    background-color: #ff00b5;
+}
+.grid_item2 {
+    background-color: #00ffff;
+}
+.grid_item3 {
+    background-color: #4f008d;
+}
+
+.grid_test1{
+    /*1) поділить наші блоки на три рівні частини*/
+    grid-template-columns: 1fr 1fr 1fr;
+    /*2) спочатку забирається 100 пікселів на першу колонку, потім на третю забирається 50% від всієї ширини сторінки, і вже потім другому блоку дається весь вільний простір.*/
+    /*grid-template-columns: 100px 1fr 50%;*/
+    /*3) виставляєм фіксовані значення, і наш батьківський блок не змінюється в розмірах*/
+    /*grid-template-columns: 100px 200px 100px;*/
+}
+.grid_test2{
+    /*1) 1000/5fr = 200px; 1fr=200px; 2fr=400px*/
+    width: 1000px;
+    grid-template-columns: 1fr 2fr 2fr;
+}
+.grid_test3{
+    width: 1000px;
+    grid-template-columns: 1fr 2fr 2fr;
+    /*1) Текст не виходить за межі блоку. Ми шириною колонок задаємо ширину нашого контенту. Але є інший підхід, коли ми контентом в середині нашого блоку задаємо ширину наших колонок..grid_test4*/
+}
+.grid_test4{
+    grid-template-columns: min-content 200px max-content;
+    /*1) В першому випадку ширина нашої колонки буде дорівнювати найбільшому слову в нашій колонці (necessitatibus), і висотою нашого лорему. Другий випадок ширина фіксована. А третя розтягнута на всю ширину контенту.*/
+}
+.grid_test5{
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+}
+
+
+
+
