@@ -1,0 +1,187 @@
+*{
+
+    font-size: 34px;
+}
+
+#Alphabet{
+    text-align: center;
+    color: #000000;
+    font-family: 'Comfortaa', cursive;
+}
+.sun_box{
+    display: flex;
+    justify-content: center;
+}
+
+.sun{
+    border: 20px dashed gold;
+    border-radius: 20px;
+}
+
+.aa, .ab, .ac, .ad, .ae{
+    background: rgb(222, 239, 0);
+    border: 4px solid black;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 5px;
+}
+.aa{
+    text-align: start;
+    color: #0323ef;
+    border: 5px dotted black;
+    outline: 10px solid blue;
+    /*спробуєм додати коментар*/
+}
+.ab,.ad{
+    text-align: center;
+    color: #0323ef;
+    border: orange;
+    outline: 20px double black;
+    /*іще раз*/
+}
+.ac{
+    text-align: end;
+    color: #0323ef;
+    outline: 20px groove yellow;
+    /*останній раз*/
+}
+
+.ae{
+    text-align: start;
+    color: #0323ef;
+    outline: 20px ridge yellow;
+}
+.af, .ag, .ah, .ai, .aj{
+    background: rgba(72, 0, 215, 0.75);
+    border: 4px solid black;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 5px;
+    outline-offset: 6px;
+}
+.af,.ah,.aj{
+    text-align: center;
+    color: yellow;
+    outline: 10px outset yellow;
+}
+.ag{
+    text-align: end;
+    color: yellow;
+    outline: 10px inset yellow;
+}
+
+.ai{
+    text-align: start;
+    color: yellow;
+    outline: 10px inset yellow;
+}
+
+.box1{
+    height: 900px;
+    width: 100%;
+    background-image: url("images/1.jpeg");
+    background-position: right top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wall{
+    color: #000000;
+    font-size: 300px;
+    letter-spacing: 20px;
+    text-shadow: 45px 45px 10px red;
+}
+.link1{
+    text-decoration: none;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+}
+.link_box{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+
+}
+a:link{
+    color: #ffffff;
+    background-color: #000000;
+    /*Та силка в яку ти ще не заходив, по дефолту синя*/
+}
+a:visited {
+    color: #ffffff;
+    background-color: #000000;
+    /*Та силка в яку ти заходив, по дефолту фіолєтова*/
+}
+a:hover{
+    color: #000000;
+    background-color: #fd0000;
+
+}
+a:active {
+    color: #ffffff;
+    background-color: #fd0000;
+}
+
+.ak{
+    background-color: #ff0000;
+    color: #5eff00;
+    text-align: center;
+    word-spacing: 20px;
+    line-height: 100%;
+    text-shadow: 8px 8px 4px black;
+}
+.order_list{
+    display: flex;
+    justify-content: center;
+}
+ol,ul{
+    background: #ffe58e;
+    padding: 200px;
+    margin: 0;
+    border:20px solid black ;
+}
+ol{
+    list-style:inside url("images/2.png");
+    margin-right: 10px;
+}
+ul{
+    list-style: square inside;
+    margin-left: 10px;
+}
+li{
+    background: rgba(255, 245, 191, 0.73);
+}
+.multiplication_table{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+table{
+    border-collapse: collapse;
+}
+td,th{
+    padding: 14px;
+    border: 4px solid darkgreen;
+}
+th{
+    background-color: #4fa200;
+    color: white;
+}
+tr:nth-child(2n){
+    background-color: #ccffa5;
+}
+
+.sticky_example{
+    padding-left: 400px;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+}
+.sticky_example_item{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #e200ff;
+    border: 4px solid #000000;
+}

@@ -1,0 +1,149 @@
+.center {
+    margin: auto;
+    width: 60%;
+    border: 5px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.opacha {
+    display: none;
+    background: red;
+    color: white;
+    padding: 20px;
+}
+
+/* При наведені(hover) на div зміню дисплей з нон на блок*/
+div:hover span {
+    display: block;
+}
+
+/* Змінює колір тексту і бекграунду під час виділення (для Мозіли)*/
+::-moz-selection {
+    color: red;
+    background: yellow;
+}
+
+/* Змінює колір тексту і бекграунду під час виділення */
+::selection {
+    color: #ffffff;
+    background: #fd0000;
+}
+
+/* Змінює першу літеру в абзаці */
+p::first-letter {
+    color: #ff6a00;
+    font-size: xx-large;
+}
+
+/* Змінює перший рядок в абзаці (при збільшені чи зменшенні масштабу - адаптується) */
+p::first-line {
+    color: rgba(187, 111, 0, 0.8);
+    font-variant: small-caps;
+}
+
+.cobra_gallery img {
+    width: 150px;
+    height: 150px;
+    /*object-fit: cover; Смещаемый контент меняет свой размер таким образом, чтобы сохранять свои пропорции при заполнении блока:
+    окончательный размер контента будет определён как "покрытие" блока, ограничиваясь его шириной и высотой.(150x150px)*/
+    object-fit: cover;
+}
+/* При наведенні на зображення, розмиває його */
+img:hover {
+    opacity: 60%;
+}
+
+.cobra_gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    margin: 50px auto auto auto;
+}
+
+/*____________________________________________________________________________________-*/
+.category {
+    font-family: 'Titan One', cursive;
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    text-shadow: 6px 6px 4px #008bff;
+    position: sticky;
+    top: 0;
+    width: 60%;
+    margin: 50px auto auto auto;
+}
+
+.title {
+    text-transform: uppercase;
+    font-family: 'Crimson Text', serif;
+    font-size: 70px;
+    color: #ffc400;
+    text-shadow: 4px 4px 3px orangered;
+    background: #008bff;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 60%;
+    margin: 50px auto auto auto;
+}
+
+.main {
+    width: 60%;
+    margin: 50px auto auto auto;
+    background: #ffe58e;
+}
+/*Меню через display:inline-block*/
+.nav{
+    list-style-type:none;
+    text-align: center;
+    background: gold;
+
+}
+
+li{
+    display: inline-block;
+    padding: 20px;
+
+}
+a {
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+.sticky{
+    position: -webkit-sticky; /* для сафарі браузера */
+    position: sticky;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50;
+    width: 60%;
+    margin: 50px auto auto auto;
+}
+/* Те саме меню тільки через display:flex */
+.nav1{
+    list-style-type:none;
+    text-align: center;
+    background: gold;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.sticky1{
+    position: -webkit-sticky; /* для сафарі браузера */
+    position: sticky;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    margin: 50px auto auto auto;
+}
