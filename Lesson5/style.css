@@ -1,0 +1,798 @@
+*, html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*A L L
+/*____________________________________________*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*C O N T A I N E R
+/*____________________________________________*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/*H E A D E R
+/*____________________________________________*/
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #515369;
+    padding: 35px 0;
+}
+
+/*N A V I G A T I O N
+/*____________________________________________*/
+.nav {
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+}
+
+.nav__link {
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: .75;
+
+    transition: opacity .1s linear;
+}
+
+.nav__link:first-child {
+    margin-left: 0;
+}
+
+.nav__link:hover {
+    opacity: 1;
+}
+
+/*I N T R O
+/*____________________________________________*/
+.intro {
+    height: 750px;
+    background: #31344e url("images/intro-bg.jpg") center no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+}
+
+.container__intro {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.intro__inner {
+    max-width: 970px;
+    width: 100%;
+    text-align: center;
+}
+
+.intro__title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.intro__subtitle {
+    font-size: 22px;
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+
+/*B U T T O N
+/*____________________________________________*/
+.button {
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: background .1s linear;
+    text-align: center;
+}
+
+.button--red {
+    background: #ff3333;
+}
+
+.button--red:hover {
+    background: #af0000;
+}
+
+/*F E A T U R E S
+/*____________________________________________*/
+.features {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 100px 0;
+}
+
+.features__item {
+    width: 33.33333%;
+    text-align: center;
+    padding: 40px 40px;
+}
+
+.features__icon {
+    margin-bottom: 20px;
+}
+
+.features__title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.features__text {
+    font-size: 14px;
+    color: #2d3033;
+    line-height: 1.5;
+}
+
+/*W O R K S
+/*____________________________________________*/
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.works__item {
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.works__photo {
+    position: absolute;
+    z-index: 1;
+}
+
+.works__content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 74, 74, 0.90);
+    z-index: 2;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; /*align-items:center*/
+}
+
+.works__title {
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.works__text {
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+
+.works__content:hover {
+    opacity: 1;
+    transition: opacity .3s linear;
+}
+
+/*T E A M
+/*____________________________________________*/
+.team {
+    margin: 100px;
+}
+
+.team__inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.team__item {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+
+}
+
+.team__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.team__name {
+    font-size: 22px;
+    color: #2d3033;
+    margin-bottom: 8px;
+}
+
+.team__prof {
+    font-size: 13px;
+    color: red;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.team__text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/*S O C I A L // S P R I T E
+/*____________________________________________*/
+.social {
+    display: flex;
+
+}
+
+.social__item {
+    width: 40px;
+    height: 40px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4px;
+    border-radius: 5px;
+    transition: background-color .1s linear;
+}
+
+.social__icon1, .social__icon2, .social__icon3 {
+    fill: black;
+    display: block;
+    height: 25px;
+
+}
+
+.social__item:hover {
+    background-color: #000000;
+}
+
+/*При наведені на айтем, виконати дію з іконкой*/
+.social__item:hover .social__icon1 {
+    fill: #ffffff;
+}
+
+.social__item:hover .social__icon2 {
+    fill: #00e1ff;
+}
+
+.social__item:hover .social__icon3 {
+    fill: #3e64ff;
+}
+
+/*R E V I E W S
+/*____________________________________________*/
+.reviews {
+    background-color: #53354a;
+}
+
+.reviews__item {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.reviews__photo {
+    width: 50%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.reviews__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.reviews_content {
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+.reviews__text {
+    font-family: 'Cardo', sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    line-height: 1.2;
+    color: white;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.reviews__author {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    padding-left: 20px;
+}
+
+/*D O W N L O A D
+/*____________________________________________*/
+
+.download {
+    margin: 90px 0;
+    text-align: center;
+}
+
+.download__title {
+    font-size: 28px;
+    color: #2d3033;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.download__text {
+    font-size: 13px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/*M E D I A
+/*____________________________________________*/
+/*Ми написали медіа запрос, який буде спрацьовувати при ширині екрана 1024px і менше*/
+
+/*1200px*/
+@media (max-width: 1200px) {
+    .header__inner {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/*1050px*/
+@media (max-width: 1050px) {
+    .intro__inner {
+        padding: 0 10%;
+    }
+
+    .header__logo {
+        margin-left: 10%;
+    }
+}
+
+/*900px*/
+@media (max-width: 900px) {
+    .header__inner {
+        display: flex;
+        justify-content: start;
+    }
+
+    .header__logo {
+        margin-left: 10%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .intro__title {
+        font-size: 50px;
+    }
+
+    .intro__subtitle {
+        font-size: 19px;
+    }
+
+    .features__title {
+        font-size: 13px;
+    }
+
+    .features__text {
+        font-size: 12px;
+    }
+
+    .team__name {
+        font-size: 19px;
+    }
+
+    .team__prof {
+        font-size: 10px;
+    }
+
+    .team__text {
+        font-size: 12px;
+    }
+
+    .social {
+        display: flex;
+    }
+
+    .social__item {
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+    }
+
+    .social__icon1, .social__icon2, .social__icon3 {
+        height: 15px;
+    }
+
+    .reviews__text {
+        font-size: 30px;
+    }
+
+    .reviews__author {
+        font-size: 10px;
+    }
+
+    .download__title {
+        font-size: 24px;
+    }
+
+    .download__text {
+        font-size: 10px;
+    }
+}
+
+/*768px*/
+@media (max-width: 768px) {
+    .header__logo {
+        margin-left: 10%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .intro {
+        height: 600px;
+    }
+
+    .intro__title {
+        margin-bottom: 10px;
+    }
+
+    .intro__title {
+        font-size: 35px;
+    }
+
+    .intro__subtitle {
+        font-size: 13px;
+    }
+
+    .features {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 50px 0;
+    }
+
+    .features__item {
+        padding: 20px 20px;
+    }
+
+    .features__icon {
+        margin-bottom: 10px;
+        height: 40px;
+    }
+
+    .features__title {
+        font-size: 9px;
+    }
+
+    .features__text {
+        font-size: 9px;
+    }
+    .works__item {
+        width: 50%;
+    }
+    .team__item {
+        width: 50%;
+    }
+    .team__name {
+        font-size: 9px;
+    }
+
+    .team__prof {
+        font-size: 5px;
+    }
+
+    .team__text {
+        font-size: 9px;
+    }
+
+    .social {
+        display: flex;
+    }
+
+    .social__item {
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+    }
+
+    .social__icon1, .social__icon2, .social__icon3 {
+        height: 15px;
+    }
+
+    .reviews__item {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .reviews__photo {
+        width: 100%;
+        height: 500px;
+    }
+    .reviews_content {
+        width: 100%;
+        padding: 20px 20px;
+        height: 250px;
+    }
+    .reviews__text {
+        font-size: 21px;
+    }
+
+    .reviews__author {
+        font-size: 7px;
+    }
+    .download {
+        margin: 45px 0;
+    }
+
+    .download__title {
+        font-size: 17px;
+    }
+
+    .download__text {
+        font-size: 7px;
+    }
+}
+
+/*425px*/
+@media (max-width: 425px) {
+    .header__logo {
+        margin-left: 10%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .intro {
+        height: 500px;
+    }
+
+    .intro__title {
+        margin-bottom: 10px;
+    }
+
+    .intro__title {
+        font-size: 25px;
+    }
+
+    .intro__subtitle {
+        font-size: 9px;
+        margin-bottom: 42px;
+    }
+
+    .button {
+        padding: 10px 28px;
+        font-size: 9px;
+        border-radius: 3px;
+    }
+
+    .features {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .features__item {
+        padding: 14px 14px;
+        width: 40%;
+        text-align: center;
+    }
+
+    .features__icon {
+        margin-bottom: 10px;
+        height: 28px;
+    }
+
+    .features__title {
+        font-size: 6px;
+    }
+
+    .features__text {
+        font-size: 6px;
+    }
+
+    .works__item {
+        width: 100%;
+    }
+    .team__item {
+        width: 100%;
+    }
+    .team__name {
+        font-size: 6px;
+    }
+
+    .team__prof {
+        font-size: 4px;
+    }
+
+    .team__text {
+        font-size: 6px;
+    }
+    .social__item {
+        width: 14px;
+        height: 14px;
+        border-radius: 2px;
+    }
+
+    .social__icon1, .social__icon2, .social__icon3 {
+        height: 15px;
+    }
+
+
+
+
+
+
+
+
+
+    .reviews {
+        background-color: #53354a;
+        height: 100%;
+    }
+
+    .reviews__img {
+        position: absolute;
+        top: 0;
+        right: -150px;
+
+    }
+
+    .reviews_content {
+        width: 100%;
+    }
+
+    .reviews__text {
+        padding-left: 10px;
+        margin-bottom: 5px;
+    }
+
+    .reviews__author {
+        padding-left: 10px;
+    }
+
+
+    .reviews__photo {
+        width: 100%;
+        height: 500px;
+    }
+
+    .reviews__text {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .reviews__author {
+        font-size: 5px;
+    }
+    .download {
+        margin: 30px 0;
+    }
+
+    .download__title {
+        font-size: 12px;
+    }
+
+    .download__text {
+        font-size: 5px;
+    }
+}
