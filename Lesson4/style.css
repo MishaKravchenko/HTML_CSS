@@ -1,0 +1,330 @@
+/*___________Скидання властивостей браузера_____________*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+
+table{border-collapse: collapse;
+border-spacing: 0;
+}
+/*_________________Шапка сайту______________________*/
+*{
+    font-family: 'Alegreya', serif;
+    text-decoration: none;
+}
+.main_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_line{
+    padding:15px 35px 15px 35px;
+}
+.click{
+    width: 150px;
+    display: flex;
+}
+
+.line{
+    width: 35px;
+    height: 5px;
+    background: #004580;
+    margin-top: 5px;
+    border-radius: 40%;
+}
+
+.logo{
+    width: 360px;
+    height: 78px;
+}
+
+.pdf{
+    font-family: 'Alegreya', serif;
+    color: #004580;
+    font-size: 20px;
+}
+
+.main_block_item3{
+    display: flex;
+    align-items: center;
+}
+
+/*________________Меню навігації______________________*/
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+li{
+    list-style-type: none;
+}
+a:hover{
+    opacity: 80%;
+    color: #004580;
+}
+a{
+    color:black;
+    font-weight:bolder;
+}
+.lang,.search{
+    width: 20px;
+    height: 20px;
+}
+
+/*_________________Загальні блоки_______________________*/
+.main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+.start{
+    width: 15%;
+    height: 1000px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.center{
+    width: 50%;
+    height: 1000px;
+}
+.end{
+    width: 20%;
+    height: 1000px;
+}
+/*________________________Ліва колонка новин_______________________*/
+/*________________ДАТА і ЧАС___________________*/
+.data{
+    height:15%;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: start;
+    justify-content: start;
+}
+
+.data1{
+    display: flex;
+    justify-content: start;
+    height: 40%;
+}
+
+.data2{
+    display: flex;
+    justify-content: start;
+    flex-flow: column wrap;
+}
+/*___________Колонка редактора________________*/
+.redaktor{
+    height: 42%;
+    width: 70%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+.redaktor1{
+    align-self: center;
+    height: 10%;
+}
+.redaktor2{
+    height: 20%;
+}
+/*___________Проект 30 років________________*/
+
+.project30{
+    height: 43%;
+    width: 70%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.project301,.project302,.project303,.project304{
+    height: 10%;
+}
+
+/*_______________Центральна колонка______________________*/
+/*_______________Центральна колонка верх (з широкоформатним фото)______________________*/
+.news1{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+}
+.news_item1{
+    height: 250px;
+    width: 40%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    background:#004580 ;
+
+}
+.news_item2{
+    height: 250px;
+    width: 60%;
+}
+
+
+/*_______________Центральна колонка ліва частина(4 блока з фото)______________________*/
+.news2{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.news_item3{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.news_item4{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.news_block1,.news_block2,.news_block3,.news_block4{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.image_block{
+    height:43% ;
+    margin-right: 25px;
+    overflow: hidden;
+}
+.news_item2,.image_block,.news_item5{
+    overflow: hidden;
+}
+.img,.img1,.img2{
+    width:100%;
+}
+
+.name{
+    margin-right: 25px;
+}
+.father{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+/*_______________Центральна колонка права частина (статті)______________________*/
+.news_block5{
+    height: 25%;
+    width: 100%;
+
+}
+.news_block6{
+    height: 20%;
+    width: 100%;
+
+}
+.news_block7,.news_block8,.news_block9,.news_block10{
+    height: 13%;
+    width: 100%;
+}
+
+/*_______________Права колонка______________________*/
+.end{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+.news_item5,.news_item6,.news_item7{
+    width:100%;
+    height: 33%;
+}
+
+
+.rada{
+    object-fit: cover;
+    max-width: 100%;
+    margin-top: 60px    ;
+}
+.kurs{
+    object-fit: cover;
+    max-width: 100%;
+    margin-top: 10px    ;
+}
+
+/*_________________Стилізація тексту____________________*/
+h1{
+    font-size: 25px;
+}
+.txt2,.txt3{
+    font-size: large;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.txt3{
+color: #004580;
+}
+h3{
+    font-weight: bold;
+    font-size: large;
+}
+.txt4{
+    color: orange;
+
+}
+.txt5{
+    color: orange;
+    font-weight: bold;
+    font-size: large;
+}
+h2,h4{
+    color: white;
+    margin-left: 5px;
+}
+h2{
+    font-size:30px;
+}
+h4{
+    margin-bottom: 5px;
+}
